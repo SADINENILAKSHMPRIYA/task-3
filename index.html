@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Styling and JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to Responsive Web Example</h1>
+
+  <!-- Image Carousel -->
+  <div class="carousel">
+    <img id="carouselImage" src="https://via.placeholder.com/400x200?text=Image+1" alt="carousel">
+    <button onclick="nextImage()">Next</button>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="quiz">
+    <h2>Quiz: What is the capital of India?</h2>
+    <button onclick="checkAnswer('Delhi')">Delhi</button>
+    <button onclick="checkAnswer('Mumbai')">Mumbai</button>
+    <button onclick="checkAnswer('Chennai')">Chennai</button>
+    <p id="quizResult"></p>
+  </div>
+
+  <!-- API Section -->
+  <div class="api-data">
+    <h2>Random Joke Generator</h2>
+    <button onclick="fetchJoke()">Get a Joke</button>
+    <p id="joke"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
